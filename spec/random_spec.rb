@@ -6,7 +6,7 @@ describe Random do
 context 'when generating a random number' do
 
   it 'can generate a lucky lotto dip' do
-    expect(random.generate).not_to be_empty
+    expect(random.generate.length).to be(6)
   end
  end
 end
